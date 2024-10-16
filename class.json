@@ -1,0 +1,282 @@
+[
+    {
+        "id": "3",
+        "name": "ANTI MALARIA"
+    },
+    {
+        "id": "4",
+        "name": "ANTI HYPERTENSIVE"
+    },
+    {
+        "id": "5",
+        "name": "ANTI DIABETES"
+    },
+    {
+        "id": "6",
+        "name": "ANTI PSYCHOTIC"
+    },
+    {
+        "id": "7",
+        "name": "ANTI DURETICS"
+    },
+    {
+        "id": "8",
+        "name": "SEDATIVES"
+    },
+    {
+        "id": "9",
+        "name": "ANTI COAGULANT"
+    },
+    {
+        "id": "10",
+        "name": "ANTACID"
+    },
+    {
+        "id": "11",
+        "name": "ANTI CONVULSANT"
+    },
+    {
+        "id": "12",
+        "name": "ANASTHESTICS AGENT"
+    },
+    {
+        "id": "13",
+        "name": "ANTI HISTHAMINE"
+    },
+    {
+        "id": "14",
+        "name": "ADMISSION PACK"
+    },
+    {
+        "id": "16",
+        "name": "ANTI BIOTICS"
+    },
+    {
+        "id": "17",
+        "name": "RESPIRATORY"
+    },
+    {
+        "id": "19",
+        "name": "LAXATIVES"
+    },
+    {
+        "id": "20",
+        "name": "CONTRACEPTIVE"
+    },
+    {
+        "id": "24",
+        "name": "PHYSIOTHERAPY"
+    },
+    {
+        "id": "25",
+        "name": "ICU (MEDS)"
+    },
+    {
+        "id": "27",
+        "name": "COUGH & LOZENGES (MEDS)"
+    },
+    {
+        "id": "29",
+        "name": "SUPPLEMENTS & MULTIVITAMINS"
+    },
+    {
+        "id": "35",
+        "name": "ANALGESIC"
+    },
+    {
+        "id": "36",
+        "name": "SUTURES"
+    },
+    {
+        "id": "38",
+        "name": "CONSUMABLES"
+    },
+    {
+        "id": "39",
+        "name": "INFUSIONS"
+    },
+    {
+        "id": "40",
+        "name": "INSULIN"
+    },
+    {
+        "id": "41",
+        "name": "ICU CONSUMABLES"
+    },
+    {
+        "id": "42",
+        "name": "INOTROPES"
+    },
+    {
+        "id": "43",
+        "name": "ANTI EMETIC"
+    },
+    {
+        "id": "44",
+        "name": "STERIODS"
+    },
+    {
+        "id": "45",
+        "name": "PHARMACOTHERAPEUTIC"
+    },
+    {
+        "id": "46",
+        "name": "ANTIMYCOBACTERIALS"
+    },
+    {
+        "id": "47",
+        "name": "ANTIANDROGEN"
+    },
+    {
+        "id": "49",
+        "name": "CHOLINESTERASE"
+    },
+    {
+        "id": "50",
+        "name": "ANTICHOLINERIGIC"
+    },
+    {
+        "id": "51",
+        "name": "ANTIFIBRINOLYTICS"
+    },
+    {
+        "id": "52",
+        "name": "ANTIARRHYTHMIC"
+    },
+    {
+        "id": "53",
+        "name": "VACCINES"
+    },
+    {
+        "id": "54",
+        "name": "ANTIRETROVIRAL"
+    },
+    {
+        "id": "55",
+        "name": "Pharmacy Consumables"
+    },
+    {
+        "id": "56",
+        "name": "ANTI GLUCOSE"
+    },
+    {
+        "id": "57",
+        "name": "ANTI GLUCOSE TEST"
+    },
+    {
+        "id": "65",
+        "name": "ANTI GLUCOSE TEST 2"
+    },
+    {
+        "id": "68",
+        "name": "ANTI GLUCOSE TEST 3"
+    },
+    {
+        "id": "77",
+        "name": "ANTI FUNGAL"
+    },
+    {
+        "id": "78",
+        "name": "WORM EXPELLER"
+    },
+    {
+        "id": "80",
+        "name": "ANTITHYRODISM"
+    },
+    {
+        "id": "81",
+        "name": "EYE AND EAR DROP"
+    },
+    {
+        "id": "82",
+        "name": "ANTI INFLAMMATORY"
+    },
+    {
+        "id": "83",
+        "name": "OVULATORY STIMULANT"
+    },
+    {
+        "id": "84",
+        "name": "PROSTATE"
+    },
+    {
+        "id": "85",
+        "name": "ANTIPARASITICS"
+    },
+    {
+        "id": "86",
+        "name": "VASOACTIVE CEREBRAL PRESERVER"
+    },
+    {
+        "id": "87",
+        "name": "ERGOT ALKALOIDS"
+    },
+    {
+        "id": "88",
+        "name": "PHOSPHOLIPIDS"
+    },
+    {
+        "id": "90",
+        "name": "ANTIDIARRHEALS"
+    },
+    {
+        "id": "91",
+        "name": "OPIATE ANTAGONIST"
+    },
+    {
+        "id": "92",
+        "name": "URINARY ALKALINIZERS"
+    },
+    {
+        "id": "94",
+        "name": "HORMONAL"
+    },
+    {
+        "id": "95",
+        "name": "ANTIPASMODICS"
+    },
+    {
+        "id": "105",
+        "name": "ANTIDEPRESSANT"
+    },
+    {
+        "id": "106",
+        "name": "ANTI ALLERGIC"
+    },
+    {
+        "id": "107",
+        "name": "ANTI URIC DAEMIA"
+    },
+    {
+        "id": "108",
+        "name": "ANTI HYPERLIPIDAEMIA"
+    },
+    {
+        "id": "109",
+        "name": "SYRUPS"
+    },
+    {
+        "id": "110",
+        "name": "VASODILATORS"
+    },
+    {
+        "id": "111",
+        "name": "MUSCLE RELAXANT"
+    },
+    {
+        "id": "112",
+        "name": "ANTI CALORIE"
+    },
+    {
+        "id": "113",
+        "name": "ANTI MOULD"
+    },
+    {
+        "id": "114",
+        "name": "ANTI BIOTICS 2"
+    },
+    {
+        "id": "115",
+        "name": "Steriods 2"
+    }
+]

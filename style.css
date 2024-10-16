@@ -1,0 +1,795 @@
+body {
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #5b5b5b;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+#wrapperContent {
+  overflow: auto;
+}
+
+.Hsec {
+  display: flex;
+}
+
+#Rarrorz {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#thelabname {
+  font-size: 34px;
+  font-weight: 350px;
+  font-family: 'roboto';
+}
+
+.Rpad-labname {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: bold;
+  font-family: 'roboto';
+}
+
+#Rhead,
+#Lhead {
+  align-items: center;
+}
+
+.Rpad {
+  padding: 10px;
+  margin-right: 1px;
+}
+
+.Lpad {
+  padding: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  min-height: 84vh;
+  width: 100%;
+
+  position: relative;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 22%;
+  box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-height: 84vh;
+  padding-top: 40px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+li {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.icon {
+  padding-right: 25px;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+.custom-underline {
+  display: inline-block;
+  position: relative;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 10%;
+  width: 80%;
+  border-bottom: 2px solid #9c3030;
+}
+
+.mainContent {
+  margin-left: 20px;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  transition: transform 0.3s ease, width 0.3s ease;
+  /* transition */
+}
+
+.btn.remove span {
+  display: none;
+}
+
+.btn.remove::after {
+  content: "remove";
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main2 {
+  padding: 15px;
+}
+
+.container .medRec {
+  font-size: 24px;
+  font-family: "Roboto";
+  background-color: #9C3030;
+  color: #f8f8f8dd;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #9C3030;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "roboto";
+}
+
+.container .medRec.selected {
+  background-color: white;
+  color: #9C3030;
+  border: 2px solid #9C3030;
+}
+
+.table {
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+  background-color: #DDDD;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+tbody {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.table th,
+.table td {
+  border: 1px solid #DDDD;
+  padding: 10px;
+}
+
+.prescriptionDone {
+  position: absolute;
+  right: 25px;
+  padding: 10px 15px;
+  background-color: #9C3030;
+  border: 2px solid #9C3030;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+#remarksInput {
+  position: relative;
+  /* Keeps it within the normal flow of the document */
+  right: 0;
+  /* Aligns to the right */
+  margin-right: 0;
+  /* Ensures no extra margin on the right */
+  padding: 10px 15px;
+  width: 260px;
+  margin-top: 35px;
+  flex-direction: column;
+  display: flex;
+  /* Enables flexbox for column layout */
+}
+
+.medRec:hover {
+  background-color: #4f4f4f;
+}
+
+.arthemeter {
+  background-color: #8F8989;
+  color: #f1f1f1;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "roboto";
+}
+
+.btn {
+  background-color: #9C3030;
+  color: #f8f8f8dd;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "roboto";
+}
+
+.btn.remove {
+  content: "remove";
+  font-size: 18px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Roboto";
+}
+
+h4 {
+  font-size: 18px;
+  margin-top: 15px;
+  font-family: "Roboto";
+}
+
+.dataSearch {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+
+}
+
+.searchInput {
+  padding: 4px 9px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  width: 260px;
+  height: 50px;
+}
+
+#doseInput {
+  width: 100px;
+  background-color: rgb(226, 226, 244);
+}
+
+#durationInputs {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.durationInputs {
+  width: 50%;
+  height: inherit;
+  font-size: 18px;
+  padding: 0px 0px;
+  border: none;
+}
+
+#intervalInput {
+  width: 180px;
+  height: 58px;
+}
+
+.searchSuggest {
+  padding: 2px;
+  cursor: pointer;
+  overflow: auto;
+  max-width: 250px;
+  font-size: 10px;
+  max-height: 180px;
+}
+
+.searchSuggest div:hover {
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.btn.add {
+  margin-top: 40px;
+  height: 45px;
+  width: 70px;
+  margin-left: 20px;
+}
+
+.searchSuggest {
+  margin-top: 5px;
+  height: fit-content;
+  display: none;
+  width: 300px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.content .mainSection {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.next {
+  width: 90px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #A12B2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin-left: 45px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 22%;
+  box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-height: 84vh;
+  padding-top: 40px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  padding-top: 35px;
+  height: 70px;
+  font-weight: 700;
+  position: fixed;
+  bottom: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  display: none;
+  box-shadow: 2px 5px 10px rgba(21, 21, 21, 0.5);
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 1000;
+}
+
+
+@media (min-width: 1511px) {
+  #hamburger {
+    display: none;
+  }
+
+  .sidebar {
+    width: 22%;
+  }
+
+  .parentDiv {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .mainContent {
+    margin-bottom: 60px;
+  }
+
+  #remarksInput {
+    margin-right: 20px;
+  }
+
+  footer {
+    right: 0px;
+    width: calc(100% - 19%);
+    height: 50px;
+  }
+  
+
+}
+
+/* Media Query for tablet/ipad screens here 766px and above*/
+@media (min-width: 889px) and (max-width: 1510px) {
+
+
+  #thelabname {
+    font-size: 29px;
+    font-weight: 350px;
+  }
+
+  .Rpad-labname {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: bold;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    overflow: auto;
+  }
+
+  .mainContent {
+    margin-bottom: 70px;
+  }
+
+  .sidebar {
+    width: 300px;
+  }
+
+  .dataSearch {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto";
+    gap: 20px;
+  }
+
+  .searchInput {
+    font-size: 17px;
+    margin-top: 5px;
+    width: 360px;
+    height: 60px;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .parentDiv {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  #remarksInput {
+    right: 10px;
+    margin-right: 110px;
+  }
+
+
+  #doseInput {
+    width: 150px;
+    height: 55px;
+  }
+
+  #durationInputs {
+    width: 210px;
+    height: 55px;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 35px;
+    height: 50px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+}
+
+/* Media Query for Mobile  */
+@media (max-width: 888px) {
+  .Lpad {
+    width: 100px;
+  }
+
+  .sidebar {
+    width: 400px;
+  }
+
+  #thelabname {
+    font-size: 24px;
+    font-weight: 350px;
+  }
+
+  .Rpad-labname {
+    font-size: 19px;
+    font-weight: 400;
+    font-style: bold;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    overflow: auto;
+  }
+
+  .Rpad {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+  }
+
+  #remarksInput {
+    left: 0;
+  }
+
+  #hamburger {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  #labname,
+  #Rarrorz {
+    height: 14px;
+    width: 13px;
+    margin-top: 3px;
+  }
+
+  h4 {
+    font-size: 15px;
+    margin-top: 18px;
+  }
+
+  .content {
+    font-size: small;
+  }
+
+  .sidebar {
+
+    transform: translateX(-100%);
+    position: fixed;
+    left: 0;
+    top: 300;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: white;
+  }
+
+  .sidebar ul {
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 15px;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    right: 10px;
+    padding: 5px;
+    margin-bottom: 8px;
+  }
+
+  .mainContent {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-left: 0;
+    transform: 0.3s ease;
+  }
+
+  .sidebar-active {
+    transform: translateX(0);
+    width: 200px;
+    display: block;
+    transition: transform 0.7s ease;
+  }
+
+  .main-content-full {
+    width: calc(100% - 200px);
+    position: fixed;
+    height: calc(100% - 90px);
+    left: 210px;
+    transition: transform 0.7s ease;
+  }
+
+  .main2 {
+    padding: 0%;
+    margin-left: 0px;
+    right: 1px;
+    margin-right: 0px;
+    font-family: "Roboto";
+  }
+
+  .container .medRec {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+
+  .table {
+    height: fit-content;
+    margin-top: 20px;
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 17px;
+    font-family: "Roboto";
+  }
+
+  thead {
+    background-color: #DDDD;
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+
+  tbody {
+    font-weight: 500;
+  }
+
+  .btn.remove::after {
+    content: "x";
+  }
+
+  .dataSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .searchInput {
+    width: 400px;
+    height: 40px;
+  }
+
+  .searchSuggest {
+    width: 390px;
+    font-size: 12px;
+  }
+
+  footer {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  
+}
+
+/* Media Query for Mobile (smaller) */
+@media screen and (max-width: 576px) {
+  .sidebar {
+    width: 200px;
+    height: fit-content;
+    background-color: white;
+  }
+
+  #thelabname {
+    font-size: 14px;
+    font-weight: 350px;
+    font-style: bold;
+  }
+
+  .Rpad-labname {
+    font-size: 12px;
+    font-weight: 400;
+    font-style: bold;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    overflow: auto;
+  }
+
+  .Lpad {
+    width: 100px;
+  }
+
+  .Rpad {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+  }
+
+  #labname,
+  #Rarrorz {
+    display: none;
+  }
+
+  .sidebar ul {
+    font-size: 15px;
+
+  }
+
+  .sidebar li {
+    margin-right: 10px;
+    margin-top: -3px;
+  }
+
+  .mainContent {
+    width: 100%;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Roboto";
+  }
+
+  h4 {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+
+  .table {
+    height: fit-content;
+    display: block;
+    overflow-x: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  thead {
+    background-color: #DDDD;
+    font-size: 8px;
+    font-weight: 300;
+    font-family: "Roboto";
+  }
+
+  tbody {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .arthemeter {
+    padding: 2px 5px;
+    margin-top: 3px;
+    font-size: 7px;
+  }
+
+  .dataSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .searchInput {
+    padding: 5px 8px;
+    width: 300px;
+    height: 40px;
+  }
+
+  footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+}
