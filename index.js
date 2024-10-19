@@ -126,18 +126,18 @@ function insertMedicineToTable(data) {
 
     tableBody.appendChild(row);
 
-    // Add event listener to the remove button to remove only that specific row
+    //removing button to remove only that specific row
     row.querySelector('.remove').addEventListener('click', () => {
-        tableBody.removeChild(row); // Remove the row from the table
-        updateRowNumbers(); // Update row numbers after removal
+        tableBody.removeChild(row);
+        updateRowNumbers();
     });
 }
 
-// Update row numbers in the table after removal
+// Updating row numbers in the table after removal
 function updateRowNumbers() {
     const tableBody = document.querySelector('.table tbody');
     Array.from(tableBody.children).forEach((row, index) => {
-        row.firstElementChild.textContent = index + 1; // Update the first cell with the new row number
+        row.firstElementChild.textContent = index + 1;
     });
 }
 
@@ -161,3 +161,60 @@ showSuggestions(NameInput, NameSuggestions);
 document.getElementById('donePrescribing').addEventListener('click', () => {
     document.getElementById('remarksInput').style.display = 'block';
 });
+// Show suggestions and filter as user types
+function showSuggestions(input, suggestionBox, data, isMedicine) {
+    // Display the suggestion box when the user clicks on the input
+    input.addEventListener('click', () => {
+        suggestionBox.style.display = 'block';
+        populateSuggestions(data, suggestionBox); // Populate initial suggestions
+    });
+
+    // Filter and display suggestions as the user types
+    input.addEventListener('input', () => {
+        const inputValue = input.value.toLowerCase(); // Get input value in lowercase for case-insensitive filtering
+        const filteredData = data.filter(item => {
+            const nameToFilter = isMedicine ? item.medicine_name : item.name;
+            return nameToFilter.toLowerCase().includes(inputValue); // Filter by matching the input
+        });
+
+        // Update the suggestion box with filtered data
+        populateSuggestions(filteredData, suggestionBox);
+    });
+
+    // Hide the suggestion box when clicking outside
+    document.addEventListener('click', event => {
+        if (!input.contains(event.target) && !suggestionBox.contains(event.target)) {
+            suggestionBox.style.display = 'none';
+        }
+    });
+}
+
+// Updated fetchMedicalClasses function to pass data to showSuggestions
+async function fetchMedicalClasses() {
+    try {
+        const response = await fetch('https://cliniqueplushealthcare.com.ng/prescriptions/drug_class');
+        if (!response.ok) throw new Error('Retry Connection');
+        const data = await response.json();
+        showSuggestions(medicineInput, medicalInputSuggestions, data, false);
+    } catch (error) {
+        console.error('Error fetching medical classes:', error);
+    }
+}
+async function fetchMedicines() {
+    if (!selectedMedicalClassId) return;
+    const allMedicines = await fetchAllMedicines();
+    const filteredMedicines = filterMedicinesByCategory(allMedicines, selectedMedicalClassId);
+    showSuggestions(NameInput, NameSuggestions, filteredMedicines, true);
+}
+
+async function fetchAllMedicines() {
+    try {
+        const response = await fetch('https://cliniqueplushealthcare.com.ng/prescriptions/all_medicine');
+        if (!response.ok) throw new Error('Network response was not ok');
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching all medicines:', error);
+        return [];
+    }
+}
+fetchMedicalClasses();
