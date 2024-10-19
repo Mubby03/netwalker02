@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: #5b5b5b;
+  position: relative;
 }
 
 /* Header styling */
@@ -12,7 +13,6 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -60,7 +60,6 @@ header {
 .content-wrapper {
   display: flex;
   min-height: 84vh;
-  width: 100%;
 
   position: relative;
 }
@@ -117,6 +116,7 @@ li {
 }
 
 .mainContent {
+  position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
 }
@@ -135,10 +135,12 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .main2 {
   padding: 15px;
+  position: relative;
 }
 
 .container .medRec {
@@ -193,17 +195,21 @@ tbody {
 .prescriptionDone {
   position: absolute;
   right: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 10px 15px;
   background-color: #9C3030;
   border: 2px solid #9C3030;
   font-size: 15px;
   border-radius: 5px;
   color: white;
-  border: none;
-  align-items: center;
   cursor: pointer;
 }
+
+/* Ensure the parent div has a non-static position */
+.parentDiv {
+  position: relative; /* Set this to relative or any non-static value */
+}
+
 
 
 #remarksInput {
@@ -371,9 +377,10 @@ h4 {
 }
 
 footer {
-  height: auto;
   text-align: center;
   padding: 35px;
+  position: absolute; /* Keeps the element positioned absolutely */
+  right: 15px;
   font-weight: 700;
   font-size: 18px;
   margin-top: 25px;
@@ -405,9 +412,10 @@ footer {
   }
 
   footer {
-    width: 85%;
+    width: 70%;
     right: 0;
-    position: absolute;
+    position: absolute; /* Keeps the element positioned absolutely */
+    right: 15px;
   }
 
 }
