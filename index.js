@@ -113,7 +113,7 @@ function storeMedicineData() {
 function insertMedicineToTable(data) {
     const tableBody = document.querySelector('.table tbody');
     const row = document.createElement('tr');
-    
+
     row.innerHTML = `
         <td>${tableBody.children.length + 1}</td>
         <td>${data.medicineName} <div class="arthemeter">${data.medicineClass}</div></td>
@@ -123,9 +123,9 @@ function insertMedicineToTable(data) {
         <td>${data.instructions}</td>
         <td><button class="btn remove"><span>remove</span></button></td>
     `;
-    
+
     tableBody.appendChild(row);
-    
+
     // Add event listener to the remove button to remove only that specific row
     row.querySelector('.remove').addEventListener('click', () => {
         tableBody.removeChild(row); // Remove the row from the table
