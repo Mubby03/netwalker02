@@ -89,6 +89,7 @@ li {
 .icon {
   padding-right: 25px;
   max-height: 30px;
+  max-width: 25;
 }
 
 .arrow-icon {
