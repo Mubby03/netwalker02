@@ -66,7 +66,7 @@ header {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 22%;
+  width: 25%;
   box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   min-height: 84vh;
@@ -88,6 +88,7 @@ li {
 
 .icon {
   padding-right: 25px;
+  max-height: 30px;
 }
 
 .arrow-icon {
@@ -362,7 +363,7 @@ h4 {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 22%;
+  min-width: 22%;
   box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   min-height: 84vh;
