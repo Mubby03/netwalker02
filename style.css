@@ -66,7 +66,7 @@ header {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 25%;
+  width: 18%;
   box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   min-height: 84vh;
@@ -120,6 +120,8 @@ li {
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 7px;
+  min-width: 82%;
+  margin-left: 5px;
 }
 
 .btn.remove span {
@@ -276,7 +278,7 @@ h4 {
   border: 1px solid #e2e2e2;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  width: 260px;
+  width: 180px;
   height: 50px;
 }
 
@@ -363,7 +365,7 @@ h4 {
 
 /* Sidebar Styles */
 .sidebar {
-  min-width: 22%;
+  min-width: 18%;
   box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   min-height: 84vh;
@@ -389,7 +391,7 @@ footer {
   }
 
   .sidebar {
-    width: 22%;
+    width: 18%;
   }
 
   .parentDiv {
@@ -437,7 +439,7 @@ footer {
   }
 
   .sidebar {
-    width: 300px;
+    width: 18%;
   }
 
   .dataSearch {
@@ -450,7 +452,7 @@ footer {
   .searchInput {
     font-size: 17px;
     margin-top: 5px;
-    width: 360px;
+    width: 300px;
     height: 60px;
   }
 
