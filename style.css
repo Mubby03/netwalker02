@@ -377,12 +377,10 @@ h4 {
 
 footer {
   text-align: center;
-  padding: 35px;
+  width: 81%;
   position: absolute; /* Keeps the element positioned absolutely */
-  right: 15px;
-  font-weight: 700;
+  right: 0;
   font-size: 18px;
-  margin-top: 25px;
   box-shadow: 2px 5px 10px rgba(18, 18, 18, 0.5);
 }
 
@@ -407,13 +405,6 @@ footer {
 
   #remarksInput {
     margin-right: 20px;
-  }
-
-  footer {
-    width: 70%;
-    right: 0;
-    position: absolute; /* Keeps the element positioned absolutely */
-    right: 15px;
   }
 }
 
